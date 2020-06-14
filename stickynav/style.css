@@ -1,0 +1,101 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: black;
+    box-sizing: border-box;
+    background: rgb(164, 214, 216);
+}
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background: url(https://picsum.photos/600/400) bottom center no-repeat;
+    background-size: cover;
+    align-content: center;
+    align-content: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
+.navigation{
+    position: relative;
+    background: black;
+    color: white;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+nav li{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+li.logo{
+    background: white;
+    color: black;
+    max-width: 0;
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: 600;
+    /*transition: all 0.5s;*/
+}
+
+nav a{
+    text-transform: uppercase;
+}
+
+.site-wrap{
+    background: rgb(210, 229, 230);
+    margin: 70px auto;
+    padding: 40px 100px;
+    text-align: justify;
+    max-width: 700px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    transform: scale(0.98);
+}
+
+.fix-nav .site-wrap{
+    transform: scale(1);
+}
+
+p{
+    margin-top: 0;
+}
+
+.right-image{
+    float: right;
+    margin-left: 15px;
+}
+
+.left-image{
+    float: left;
+    margin-right: 15px;
+}
+
+body.fix-nav nav{
+    position: fixed;
+}
+
+.fix-nav li.logo{
+    max-width: 500px;
+}
